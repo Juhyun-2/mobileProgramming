@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- 사용자가 인원 수를 입력할 수 있는 커스텀 다이얼로그 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+<!-- 인원 수를 입력할 EditText 숫자만 입력 가능-->
+    <EditText
+        android:id="@+id/numberOfPeople"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="number of people"
+        android:inputType="number">
+    </EditText>
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- 확인 버튼 -->
+        <Button
+            android:id="@+id/ok"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="OK">
+        </Button>
+
+        <!-- 취소 버튼 -->
+        <Button
+            android:id="@+id/cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="CANCEL">
+        </Button>
+
+
+    </LinearLayout>
+
+</LinearLayout>

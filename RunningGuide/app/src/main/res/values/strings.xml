@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Running Guide</string>
+    <string name="title_home">Home</string>
+    <string name="title_records">Records</string>
+    <string name="title_setting">Setting</string>
+    <string name="recordFile_path">/data/data/kr.ac.konkuk.runningguide/files/records</string>
+    <string name="dateFormat">yyyy-MM-dd</string>
+    <string name="timeFormat">HH:mm:ss</string>
+    <string name="ifNoLongTermGoal">설정된 Long-Term Goal이 없습니다.</string>
+    <string name="SharedPreferences_LongTermGoal">longTermGoal</string>
+    <string name="longTermGoalStartDate">longTermGoalStartDate</string>
+    <string name="longTermGoalFinishDate">longTermGoalFinishDate</string>
+    <string name="longTermGoalTargetDistance">longTermGoalTargetDistance</string>
+    <string name="longTermGoalTargetTime">longTermGoalTargetTime</string>
+    <string name="SharedPreferences_Notification">notification</string>
+    <string name="notificationDay">notificationDay</string>
+    <string name="userDeniedPermission">퍼미션이 거부되었습니다.\n앱을 다시 실행하여 퍼미션을 허용해주세요.</string>
+    <string name="userCheckedDontAskAgain">퍼미션이 거부되었습니다.\n설정 -> 위치 정보에서 Running Guide 위치 정보 접근을 허용해주세요.</string>\
+</resources>

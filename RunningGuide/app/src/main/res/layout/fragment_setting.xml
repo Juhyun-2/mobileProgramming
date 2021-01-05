@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@color/backgroundColor">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Long-Term Goal 설정"
+                android:drawableLeft="@drawable/ic_medal_solid_color"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:layout_marginBottom="10sp">
+            </TextView>
+            <TextView
+                android:id="@+id/currentLongTermGoal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/ifNoLongTermGoal"
+                android:gravity="center">
+            </TextView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginTop="10sp"
+                android:layout_marginBottom="10sp">
+
+                <NumberPicker
+                    android:id="@+id/longTermTargetDistance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="80sp">
+                </NumberPicker>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="km"
+                    android:layout_marginLeft="10sp">
+                </TextView>
+
+                <NumberPicker
+                    android:id="@+id/longTermTargetMin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="80sp">
+                </NumberPicker>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="분">
+                </TextView>
+
+                <NumberPicker
+                    android:id="@+id/longTermTargetSec"
+                    android:layout_width="wrap_content"
+                    android:layout_height="80sp">
+                </NumberPicker>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="초"></TextView>
+        
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <Button
+                    android:id="@+id/saveLongTermGoalButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5sp"
+                    android:layout_marginBottom="5sp"
+                    android:background="@drawable/shape_radius_rectangle_color"
+                    android:gravity="center"
+                    android:text="저장"></Button>
+
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30sp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="알림 설정"
+                android:drawableLeft="@drawable/ic_notifications_color"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:layout_marginBottom="10sp">
+            </TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="설정된 요일 정오에 알림이 전송됩니다."
+                android:gravity="center">
+            </TextView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10sp"
+                android:layout_marginBottom="10sp"
+                android:orientation="horizontal">
+                <ToggleButton
+                    android:id="@+id/notification_Mon_toggleButton"
+                    android:layout_width="40sp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/selector_notification_togglebutton"
+                    android:textOn="월"
+                    android:textOff="월">
+                </ToggleButton>
+                <ToggleButton
+                    android:id="@+id/notification_Tue_toggleButton"
+                    android:layout_width="40sp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/selector_notification_togglebutton"
+                    android:textOn="화"
+                    android:textOff="화">
+                </ToggleButton>
+                <ToggleButton
+                    android:id="@+id/notification_Wed_toggleButton"
+                    android:layout_width="40sp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/selector_notification_togglebutton"
+                    android:textOn="수"
+                    android:textOff="수">
+                </ToggleButton>
+                <ToggleButton
+                    android:id="@+id/notification_Thu_toggleButton"
+                    android:layout_width="40sp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/selector_notification_togglebutton"
+                    android:textOn="목"
+                    android:textOff="목">
+                </ToggleButton>
+                <ToggleButton
+                    android:id="@+id/notification_Fri_toggleButton"
+                    android:layout_width="40sp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/selector_notification_togglebutton"
+                    android:textOn="금"
+                    android:textOff="금">
+                </ToggleButton>
+                <ToggleButton
+                    android:id="@+id/notification_Sat_toggleButton"
+                    android:layout_width="40sp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/selector_notification_togglebutton"
+                    android:textOn="토"
+                    android:textOff="토">
+                </ToggleButton>
+                <ToggleButton
+                    android:id="@+id/notification_Sun_toggleButton"
+                    android:layout_width="40sp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/selector_notification_togglebutton"
+                    android:textOn="일"
+                    android:textOff="일">
+                </ToggleButton>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <CheckBox
+                    android:id="@+id/notification_checkbox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="설정한 요일에 푸시 알림 받기">
+                </CheckBox>
+            </LinearLayout>
+
+            <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+                <Button
+                    android:id="@+id/saveNotificationButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10sp"
+                    android:layout_marginBottom="10sp"
+                    android:background="@drawable/shape_radius_rectangle_color"
+                    android:gravity="center"
+                    android:text="저장"></Button>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

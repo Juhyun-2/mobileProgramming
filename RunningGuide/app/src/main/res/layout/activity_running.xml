@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/runningLinearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.MapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="250sp"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="50sp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_weight="0.7">
+
+            <TextView
+                android:id="@+id/targetTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="-분 : -초"
+                android:textSize="20sp">
+            </TextView>
+
+            <TextView
+                android:id="@+id/runningTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="-분 : -초"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:layout_marginTop="10sp">
+            </TextView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/targetDistance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="0.00km"
+                android:textSize="20sp">
+            </TextView>
+
+            <TextView
+                android:id="@+id/runningDistance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0.00km"
+                android:gravity="center"
+                android:layout_marginTop="10sp"
+                android:textSize="20sp">
+            </TextView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/targetPace"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="-' -&quot;"
+                android:gravity="center"
+                android:textSize="20sp">
+            </TextView>
+
+            <TextView
+                android:id="@+id/runningPace"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="-' -&quot;"
+                android:gravity="center"
+                android:layout_marginTop="10sp"
+                android:textSize="20sp">
+            </TextView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="50sp">
+
+        <Button
+            android:id="@+id/runningPauseButton"
+            android:layout_width="100sp"
+            android:layout_height="100sp"
+            android:background="@drawable/ic_pause_circle_regular"
+            android:visibility="gone">
+        </Button>
+
+        <Button
+            android:id="@+id/runningStopButton"
+            android:layout_width="100sp"
+            android:layout_height="100sp"
+            android:background="@drawable/ic_stop_circle_regular"
+            android:layout_marginRight="40sp"
+            android:visibility="gone">
+        </Button>
+
+        <Button
+            android:id="@+id/runningResumeButton"
+            android:layout_width="100sp"
+            android:layout_height="100sp"
+            android:background="@drawable/ic_play_circle_regular">
+        </Button>
+
+    </LinearLayout>
+
+</LinearLayout>
